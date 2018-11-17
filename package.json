@@ -1,0 +1,24 @@
+{
+  "name": "mars-backend",
+  "version": "1.0.0",
+  "description": "Backend del proyecto basado en Airbnb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malibb/mars-backend.git"
+  },
+  "author": "marsTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malibb/mars-backend/issues"
+  },
+  "homepage": "https://github.com/malibb/mars-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.12"
+  }
+}

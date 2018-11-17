@@ -1,2 +1,2 @@
 # mars-backend
-Aplicación basada en airbn para practica.
+Aplicación basada en airbnb para practica.

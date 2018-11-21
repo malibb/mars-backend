@@ -1,11 +1,8 @@
-
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://angelprg:<PASSWORD>@cluster0-ifxvi.mongodb.net/test?retryWrites=true', {
-    useNewUrlParser: true
-});
+const Schema = mongoose.Schema
 
 
-const User = mongoose.model('User', {
+const userSchema = new Schema({
 	name		: {
 		first	: String,
 		last	: String,
@@ -23,7 +20,7 @@ const User = mongoose.model('User', {
 			title		: String,
 			url			: String,
 			dateCreted	: Date
-		}
+		},
 		
 		reservations	: {
 			dateStart	: Date,
@@ -38,4 +35,5 @@ const User = mongoose.model('User', {
   
 });
 
-module.exports = { User }
+const User = mongoose.model('User', userSchema);
+module.exports = User;

@@ -1,3 +1,5 @@
+
+
 const express = require('express'); //generador de aplicación
 const app = require('express')();
 const mongoController = require('./db/mongoController');
@@ -43,7 +45,20 @@ let verifyToken = (req, res, next )=> {
     }
 }
 
-app.get('/', (req,res)=> res.send('Respuesta al get vacio.'));
+
+import SERVER from './graphql/schema';
+
+// Middleware: GraphQL
+SERVER.applyMiddleware({
+    app
+  });
+
+app.get('/', (req, res)=>{
+    res.send({
+        "menssage": "ok"
+    });
+});
+
 
 //Checar en que parte de los archivos va la lógica de JWT.
 //verifyToken método creado para verificar al usuario.

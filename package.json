@@ -1,36 +1,40 @@
 {
-  "name": "mars-backend",
-  "version": "1.0.0",
-  "description": "Backend del proyecto basado en Airbnb",
+  "name": "b25-netflix-backend",
+  "version": "0.0.1",
+  "description": "Proyecto clon de cinta negra batch 25 en Dev.f Ciudad de México",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node --presets env,stage-2 bin/dev"
+    "dev": "nodemon --exec babel-node --presets env,stage-2 bin/dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malibb/mars-backend.git"
+    "url": "git+https://github.com/Masavi/b25-netflix-backend.git"
   },
-  "author": "marsTeam",
-  "license": "ISC",
+  "keywords": [
+    "Javascript",
+    "Netflix",
+    "Graphql",
+    "Node"
+  ],
+  "author": "Mauricio Saavedra",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/malibb/mars-backend/issues"
+    "url": "https://github.com/Masavi/b25-netflix-backend/issues"
   },
-  "homepage": "https://github.com/malibb/mars-backend#readme",
+  "homepage": "https://github.com/Masavi/b25-netflix-backend#readme",
   "dependencies": {
     "apollo-server-express": "^2.2.2",
-    "body-parser": "^1.18.3",
-    "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.3",
     "jsonwebtoken": "^8.4.0",
-    "mongoose": "^5.3.12"
+    "mongoose": "^5.3.13"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "dotenv": "^6.1.0"
   }
 }

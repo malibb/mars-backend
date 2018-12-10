@@ -12,6 +12,10 @@ import ApolloServer from './graphql/schema';
 // Middleware: GraphQL
 ApolloServer.applyMiddleware({ app });
 
+app.get('/', (req, res) => {
+    res.send({"message": "Bienvenido"});
+});
+
 app.listen( PORT, () => {
     console.log(`--- Servidor escuchando en el puerto ${PORT} ---`);
 });

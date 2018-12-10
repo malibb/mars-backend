@@ -3,13 +3,20 @@ const Schema = mongoose.Schema
 
 //Id Book, Id home, Id Usuario_Cliente, Fecha, soloImporte(ImporteDía, CostoTotal si acabamos el proyecto)
 
-const bookSchema = new Schema({
-    reservations	: {
-        dateStart	: Date,
-        dateEnd		: Date,
-        dateReserv	: { 
-            type: Date, 
-            default: Date.now,
-        },
+
+
+const BookSchema = new Schema({
+
+	owner_email : {
+        type    : String,
+        required: true
+    },
+    date_start     : {
+        type    : String,
+        required: true
+    },
+    date_end : {
+        type    : String,
+        required: true
     }
 });

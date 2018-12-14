@@ -1,10 +1,15 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
+
 //Id Home, Id User
 
 
 const HomeSchema = new Schema({
+    name        : {
+        type    : String,
+        required: true
+    },
 
 	description : {
         type    : String,

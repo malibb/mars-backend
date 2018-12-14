@@ -6,6 +6,10 @@ const Schema = mongoose.Schema
 
 
 const HomeSchema = new Schema({
+    name        : {
+        type    : String,
+        required: true
+    },
 
 	description : {
         type    : String,

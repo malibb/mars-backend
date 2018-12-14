@@ -39,6 +39,7 @@ input UserInput{
 
 type Home{
   _id         : ObjectID!
+  name        : String
   description : String
   address     : String
   cords_lat   : String
@@ -48,6 +49,7 @@ type Home{
 }
 
 input HomeInput{
+  name        : String!
   description : String!
   address     : String!
   cords_lat   : String
